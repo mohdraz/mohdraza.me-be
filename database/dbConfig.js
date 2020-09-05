@@ -1,4 +1,3 @@
-import knex from "knex";
 const knex = require("knex");
 
 const knexConfig = require("../knexfile.js");
