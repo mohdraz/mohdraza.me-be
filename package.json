@@ -1,0 +1,31 @@
+{
+  "name": "mohdraza.me-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohdraz/mohdraza.me-be.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohdraz/mohdraza.me-be/issues"
+  },
+  "homepage": "https://github.com/mohdraz/mohdraza.me-be#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "helmet": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.5",
+    "node-fetch": "^2.6.0",
+    "pg": "^8.3.3"
+  }
+}
