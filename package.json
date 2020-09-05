@@ -20,6 +20,7 @@
   "homepage": "https://github.com/mohdraz/mohdraza.me-be#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
@@ -28,6 +29,7 @@
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.21.5",
     "node-fetch": "^2.6.0",
+    "nodemailer": "^6.4.11",
     "nodemon": "^2.0.4",
     "pg": "^8.3.3"
   }
