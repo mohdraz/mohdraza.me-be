@@ -16,7 +16,6 @@ server.use("/api/auth/projects", pr_ProjectRouters);
 
 // contact email router
 server.post("/api/email", (req, res) => {
-  console.log("data", req.body);
 
   const data = req.body;
   const smtpTransport = nodemailer.createTransport({
