@@ -1,4 +1,6 @@
 const express = require("express");
+const nodemailer = require("nodemailer");
+
 const server = express();
 const configMiddleware = require("./configMiddleware.js");
 
@@ -16,20 +18,19 @@ server.use("/api/auth/projects", pr_ProjectRouters);
 
 // contact email router
 server.post("/api/email", (req, res) => {
-
   const data = req.body;
   const smtpTransport = nodemailer.createTransport({
     service: "Gmail",
     port: 465,
     auth: {
-      user: process.env.email,
-      pass: process.env.password,
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD,
     },
   });
 
   const mailOptions = {
     from: data.email,
-    to: process.env.email,
+    to: process.env.EMAIL_TO,
     subject: "Contact from mohdraza.me",
     html: `<p>${data.name}</p>
           <p>${data.email}</p>

@@ -6,12 +6,13 @@
 
 These routes do **_not_** require a JSON token in the header.
 
-| Method | Endpoint              | Access Control | Description      |
-| ------ | --------------------- | -------------- | ---------------- |
-| POST   | `/api/users/register` | none           | add new user     |
-| POST   | `/api/users/login`    | none           | login user       |
-| GET    | `/api/projects`       | none           | get all projects |
-| POST   | `/api/email`          | none           | send email       |
+| Method | Endpoint              | Access Control | Description        |
+| ------ | --------------------- | -------------- | ------------------ |
+| POST   | `/api/users/register` | none           | add new user       |
+| POST   | `/api/users/login`    | none           | login user         |
+| GET    | `/api/projects`       | none           | get all projects   |
+| GET    | `/api/projects/:id`   | none           | get single project |
+| POST   | `/api/email`          | none           | send email         |
 
 #### Private Information Routes
 
