@@ -1,0 +1,587 @@
+[
+  {
+    "id": 1,
+    "dj_id": 1,
+    "img_url": "https://images.unsplash.com/photo-1561928070-590b9c48f0bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "name": "Ellie and Mona",
+    "date": "2020-07-14T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 2,
+    "dj_id": 1,
+    "img_url": "https://images.unsplash.com/photo-1532329683184-6ffd13057d1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "name": "Charles and Elizabeth",
+    "date": "2020-03-30T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 3,
+    "dj_id": 2,
+    "img_url": "https://images.unsplash.com/photo-1494859632785-32abaf5241f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "name": "Chris and Kat",
+    "date": "2020-06-10T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 4,
+    "dj_id": 3,
+    "img_url": "https://images.unsplash.com/photo-1567768823253-c4fe2bf7143e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "name": "Elsa's 50th Birthday Gala",
+    "date": "2020-04-18T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 5,
+    "dj_id": 4,
+    "img_url": "https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "name": "Devin's D&D Event",
+    "date": "2020-05-20T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 6,
+    "dj_id": 4,
+    "img_url": "https://images.unsplash.com/photo-1545826394-68be0015475b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "name": "Derion and Tariya's Wedding",
+    "date": "2019-12-10T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 7,
+    "dj_id": 3,
+    "img_url": "https://images.unsplash.com/photo-1549335223-c89505707f65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "name": "Jess and Roman's Wedding",
+    "date": "2019-01-10T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 8,
+    "dj_id": 3,
+    "img_url": "https://images.unsplash.com/photo-1565734777784-6e89609ed871?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "name": "Timpanogas High School Preference Dance",
+    "date": "2020-02-05T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 9,
+    "dj_id": 2,
+    "img_url": "https://images.unsplash.com/photo-1549981118-d720d448ab86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "name": "Dora's Quinceañera",
+    "date": "2020-03-01T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 10,
+    "dj_id": 3,
+    "img_url": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "name": "Emily & Gael's Taco Party",
+    "date": "2019-05-05T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 11,
+    "dj_id": 4,
+    "img_url": "https://images.unsplash.com/photo-1558317751-bc3ed6f85f72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "name": "DarkWings Night Club",
+    "date": "2020-03-05T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 12,
+    "dj_id": 1,
+    "img_url": "https://images.unsplash.com/photo-1516970739312-08b075784b71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "name": "Soap Lake School Homecoming Dance",
+    "date": "2019-10-01T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 13,
+    "dj_id": 3,
+    "img_url": "https://images.unsplash.com/photo-1459259191495-52eccde892c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "name": "Kristina & Bryce's Wedding",
+    "date": "2019-02-28T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 14,
+    "dj_id": 2,
+    "img_url": "https://images.unsplash.com/photo-1500900173725-e0978c945e23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "name": "Amy's Wedding",
+    "date": "2020-01-24T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 15,
+    "dj_id": 4,
+    "img_url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Funitedwaymiami.org%2Fwp-content%2Fuploads%2F2017%2F02%2Fpic-of-liv-nightclub-confetti.jpg&f=1&nofb=1",
+    "name": "Miami Nights",
+    "date": "2020-01-12T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 16,
+    "dj_id": 3,
+    "img_url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FagXbcf4xu0w%2Fmaxresdefault.jpg&f=1&nofb=1",
+    "name": "Pool Party by the Sea",
+    "date": "2020-02-12T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 17,
+    "dj_id": 2,
+    "img_url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Cvrf8qjMW9ScdMJE32FGOAHaE8%26pid%3DApi&f=1",
+    "name": "Night at Schrödinger's Cat",
+    "date": "2020-02-12T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 18,
+    "dj_id": 1,
+    "img_url": null,
+    "name": "Ashley",
+    "date": "2020-06-07T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 19,
+    "dj_id": 1,
+    "img_url": null,
+    "name": "Soirée",
+    "date": "2020-06-08T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 20,
+    "dj_id": 1,
+    "img_url": null,
+    "name": "Cards",
+    "date": "2020-06-08T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 21,
+    "dj_id": 22,
+    "img_url": "tewtststtt.com",
+    "name": "Mock for test",
+    "date": "2020-06-09T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "Be back in a bit"
+  },
+  {
+    "id": 22,
+    "dj_id": 22,
+    "img_url": "tewtststtt.com",
+    "name": "Mock2",
+    "date": "2020-06-09T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "event date should be in date format"
+  },
+  {
+    "id": 23,
+    "dj_id": 1,
+    "img_url": null,
+    "name": "updateTest",
+    "date": "2020-06-08T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": null
+  },
+  {
+    "id": 24,
+    "dj_id": 27,
+    "img_url": "tewtststtt.com",
+    "name": "blah",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "blah"
+  },
+  {
+    "id": 25,
+    "dj_id": 22,
+    "img_url": "tewtststtt.com",
+    "name": "Trisha & Timothy",
+    "date": "2020-06-13T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "By the big yellow barn"
+  },
+  {
+    "id": 26,
+    "dj_id": 25,
+    "img_url": "tewtststtt.com",
+    "name": "Basic Bash",
+    "date": "2020-06-09T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "Bring the crumpets"
+  },
+  {
+    "id": 27,
+    "dj_id": 25,
+    "img_url": "tewtststtt.com",
+    "name": "New iOSTest",
+    "date": "2020-06-10T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "trying to make it work!"
+  },
+  {
+    "id": 28,
+    "dj_id": 27,
+    "img_url": "tewtststtt.com",
+    "name": "test123",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "no notes"
+  },
+  {
+    "id": 29,
+    "dj_id": 27,
+    "img_url": "tewtststtt.com",
+    "name": "new event to test",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "when we authorize an event we get an eventRep back so I’m taking the eventRep’s eventID and updating the event with that informtation and then saving to core data"
+  },
+  {
+    "id": 30,
+    "dj_id": 1,
+    "img_url": "https://images.unsplash.com/photo-1508219803418-5f1f89469b50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "name": "updateTest",
+    "date": "2020-06-08T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "Be back in a bit"
+  },
+  {
+    "id": 31,
+    "dj_id": 27,
+    "img_url": "tewtststtt.com",
+    "name": "event to test",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "did it update?"
+  },
+  {
+    "id": 32,
+    "dj_id": 27,
+    "img_url": "tewtststtt.com",
+    "name": "new new",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "new new"
+  },
+  {
+    "id": 33,
+    "dj_id": 27,
+    "img_url": "tewtststtt.com",
+    "name": "new with update func",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "new with update func"
+  },
+  {
+    "id": 34,
+    "dj_id": 27,
+    "img_url": "tewtststtt.com",
+    "name": "I’m tired",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "update function to work"
+  },
+  {
+    "id": 35,
+    "dj_id": 27,
+    "img_url": "tewtststtt.com",
+    "name": "please",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "for updating"
+  },
+  {
+    "id": 36,
+    "dj_id": 27,
+    "img_url": "tewtststtt.com",
+    "name": "I’m",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "THIS IS THE UPDATED VERSION"
+  },
+  {
+    "id": 37,
+    "dj_id": 27,
+    "img_url": "tewtststtt.com",
+    "name": "new one",
+    "date": "2020-06-12T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "lets seee"
+  },
+  {
+    "id": 38,
+    "dj_id": 22,
+    "img_url": "tewtststtt.com",
+    "name": "test for event ID",
+    "date": "2020-06-12T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "please be correct"
+  },
+  {
+    "id": 39,
+    "dj_id": 22,
+    "img_url": "tewtststtt.com",
+    "name": "test with guard",
+    "date": "2020-06-14T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "test with using a guard let"
+  },
+  {
+    "id": 40,
+    "dj_id": 22,
+    "img_url": "tewtststtt.com",
+    "name": "test with guard",
+    "date": "2020-06-14T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "test with using a guard let"
+  },
+  {
+    "id": 41,
+    "dj_id": 27,
+    "img_url": "tewtststtt.com",
+    "name": "testing update with eventREP",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "update something"
+  },
+  {
+    "id": 42,
+    "dj_id": 22,
+    "img_url": "tewtststtt.com",
+    "name": "test43",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "one more"
+  },
+  {
+    "id": 43,
+    "dj_id": 27,
+    "img_url": "tewtststtt.com",
+    "name": "test01",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "test01"
+  },
+  {
+    "id": 44,
+    "dj_id": 27,
+    "img_url": "tewtststtt.com",
+    "name": "test02",
+    "date": "2020-06-12T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "test02"
+  },
+  {
+    "id": 45,
+    "dj_id": 22,
+    "img_url": "tewtststtt.com",
+    "name": "test01",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "test01"
+  },
+  {
+    "id": 46,
+    "dj_id": 22,
+    "img_url": "tewtststtt.com",
+    "name": "test01",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "test01"
+  },
+  {
+    "id": 47,
+    "dj_id": 27,
+    "img_url": "tewtststtt.com",
+    "name": "test03",
+    "date": "2020-06-12T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "test03 updated stuff new new update"
+  },
+  {
+    "id": 48,
+    "dj_id": 22,
+    "img_url": "tewtststtt.com",
+    "name": "test03",
+    "date": "2020-06-11T00:00:00.000Z",
+    "isExplicit": false,
+    "notes": "test03"
+  },
+  {
+    "id": 51,
+    "dj_id": 5,
+    "img_url": null,
+    "name": "birthday",
+    "date": "2020-08-21",
+    "isExplicit": false,
+    "notes": "test"
+  },
+  {
+    "id": 50,
+    "dj_id": 8,
+    "img_url": null,
+    "name": "evebtnrwet",
+    "date": "2020-08-22",
+    "isExplicit": true,
+    "notes": "srtesr"
+  },
+  {
+    "id": 49,
+    "dj_id": 5,
+    "img_url": null,
+    "name": "eve23",
+    "date": "2020-08-26",
+    "isExplicit": false,
+    "notes": "ds"
+  },
+  {
+    "id": 52,
+    "dj_id": 8,
+    "img_url": null,
+    "name": "Noah's Birthday",
+    "date": "2020-08-28",
+    "isExplicit": true,
+    "notes": ""
+  },
+  {
+    "id": 53,
+    "dj_id": 8,
+    "img_url": null,
+    "name": "second event",
+    "date": "2020-08-28",
+    "isExplicit": false,
+    "notes": ""
+  },
+  {
+    "id": 55,
+    "dj_id": 29,
+    "img_url": null,
+    "name": "birthday",
+    "date": "2020-08-26",
+    "isExplicit": false,
+    "notes": ""
+  },
+  {
+    "id": 57,
+    "dj_id": 30,
+    "img_url": null,
+    "name": "Veggie Party",
+    "date": "2020-08-31T18:00:03Z",
+    "isExplicit": true,
+    "notes": "There’s a party in my tummy"
+  },
+  {
+    "id": 59,
+    "dj_id": 31,
+    "img_url": null,
+    "name": "event1",
+    "date": "2020-09-04T00:00:53Z",
+    "isExplicit": true,
+    "notes": "first event"
+  },
+  {
+    "id": 60,
+    "dj_id": 31,
+    "img_url": null,
+    "name": "event in the past",
+    "date": "2020-08-24T00:15:58Z",
+    "isExplicit": true,
+    "notes": "event2"
+  },
+  {
+    "id": 61,
+    "dj_id": 31,
+    "img_url": null,
+    "name": "event3 ",
+    "date": "2020-09-01T00:15:58Z",
+    "isExplicit": true,
+    "notes": "dance dance"
+  },
+  {
+    "id": 63,
+    "dj_id": 30,
+    "img_url": null,
+    "name": "Memorial Day ",
+    "date": "2020-05-25T15:30:23Z",
+    "isExplicit": true,
+    "notes": "memorial commerance"
+  },
+  {
+    "id": 64,
+    "dj_id": 32,
+    "img_url": null,
+    "name": "Birthday",
+    "date": "2020-08-27",
+    "isExplicit": false,
+    "notes": ""
+  },
+  {
+    "id": 67,
+    "dj_id": 29,
+    "img_url": null,
+    "name": "birthday",
+    "date": "",
+    "isExplicit": false,
+    "notes": ""
+  },
+  {
+    "id": 69,
+    "dj_id": 35,
+    "img_url": null,
+    "name": "Birthday party",
+    "date": "2021-03-14",
+    "isExplicit": true,
+    "notes": ""
+  },
+  {
+    "id": 70,
+    "dj_id": 36,
+    "img_url": null,
+    "name": "Test",
+    "date": "08-30-2020",
+    "isExplicit": true,
+    "notes": ""
+  },
+  {
+    "id": 71,
+    "dj_id": 28,
+    "img_url": null,
+    "name": "new event",
+    "date": "2020-09-02",
+    "isExplicit": true,
+    "notes": ""
+  },
+  {
+    "id": 72,
+    "dj_id": 38,
+    "img_url": null,
+    "name": "Pedro Escobedo",
+    "date": "2020-09-03",
+    "isExplicit": false,
+    "notes": ""
+  }
+]
