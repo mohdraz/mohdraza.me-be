@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 const fs = require("fs");
 
-fetch("http://localhost:3004/api/projects")
+fetch("https://mohdraza-me.herokuapp.com/api/projects")
   .then((res) => res.json())
   .then((data) => {
     console.log("data: ", data);

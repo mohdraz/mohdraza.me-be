@@ -5,11 +5,8 @@ console.log(`${projectData.length} projects are being inserted`);
 const createProject = (project) => {
   return {
     name: project.name,
-    description: project.description,
     image: project.image,
-    demo_url: project.demo_url,
-    github_be_url: project.github_be_url,
-    github_fe_url: project.github_fe_url,
+    url: project.url,
   };
 };
 
