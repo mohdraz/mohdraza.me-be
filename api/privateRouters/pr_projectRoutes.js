@@ -16,6 +16,71 @@ router.get("/", (req, res) => {
 router.post("/", async (req, res) => {
   const newProject = req.body;
 
+  if (newProject.id && newProject.oldImage === newProject.image) {
+    ProjectTbl.updateProject(newProject)
+      .then((updatedProject) => {
+        res.status(200).json(updatedProject);
+      })
+      .catch((err) => {
+        res.status(500).json(err);
+      });
+  } else if (newProject.id && newProject.oldImage != newProject.image) {
+    // delete old images from cloudinary by passing in  public_id
+    try {
+      // const { image } = await ProjectTbl.getProjectById(id);
+      const uploadedResponse = await cloudinary.uploader.destroy(
+        newProject.oldImage
+      );
+    } catch (error) {
+      console.log("err", error);
+      res.status(500).json({ message: "error deleting image", error: error });
+    }
+    // end of deleting image
+
+    // add the new image to cloudinary
+    try {
+      const fileStr = newProject.image;
+      const uploadedResponse = await cloudinary.uploader.upload(fileStr, {
+        upload_preset: "mohdraza.me",
+      });
+      newProject.image = uploadedResponse.public_id;
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: "error uploaidng image", error: error });
+    }
+    // end of adding new image
+
+    ProjectTbl.updateProject(newProject)
+      .then((updatedProject) => {
+        console.log("updatedProject", updatedProject);
+        res.status(200).json(updatedProject);
+      })
+      .catch((err) => {
+        res.status(500).json(err);
+      });
+  } else {
+    console.log("new project");
+    try {
+      const fileStr = newProject.image;
+      const uploadedResponse = await cloudinary.uploader.upload(fileStr, {
+        upload_preset: "mohdraza.me",
+      });
+      newProject.image = uploadedResponse.public_id;
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: "error uploaidng image", error: error });
+    }
+
+    // end of uploaidng image
+
+    ProjectTbl.addProject(newProject)
+      .then((addedProject) => {
+        res.status(201).json(addedProject);
+      })
+      .catch((err) =>
+        res.status(500).json({ message: "error adding project", err })
+      );
+  }
   // uplaod images to cloudinary and retrieve public_id
 
   // if (newProject.id) {
@@ -27,27 +92,6 @@ router.post("/", async (req, res) => {
 
   //   }
   // }
-
-  try {
-    const fileStr = newProject.image;
-    const uploadedResponse = await cloudinary.uploader.upload(fileStr, {
-      upload_preset: "mohdraza.me",
-    });
-    newProject.image = uploadedResponse.public_id;
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: "error uploaidng image", error: error });
-  }
-
-  // end of uploaidng image
-
-  ProjectTbl.addProject(newProject)
-    .then((addedProject) => {
-      res.status(201).json(addedProject);
-    })
-    .catch((err) =>
-      res.status(500).json({ message: "error adding project", err })
-    );
 });
 
 router.delete("/:id", async (req, res) => {

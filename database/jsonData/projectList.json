@@ -9,15 +9,6 @@
     "github_fe_url": "https://github.com/Apps-and-Websites/djhelper-fe"
   },
   {
-    "id": 3,
-    "name": "Anywhere Fitness",
-    "description": "",
-    "image": "mohdraza.me/xlf6cegxrx8n6cmf2lcx",
-    "url": "https://anywhere-fitness-lambda.netlify.app/",
-    "github_be_url": "https://github.com/Build-Week-Anywhere-Fitness-3/Back-End",
-    "github_fe_url": "https://github.com/AnywhereFitness1/Frontend"
-  },
-  {
     "id": 4,
     "name": "Single Item Movers Dallas",
     "description": "",

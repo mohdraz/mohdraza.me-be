@@ -5,6 +5,7 @@ module.exports = {
   getProjectById,
   addProject,
   deleteProject,
+  updateProject,
 };
 
 function getAllProjects() {
@@ -22,4 +23,15 @@ async function addProject(project) {
 
 function deleteProject(id) {
   return db("projects").where({ id }).del();
+}
+
+async function updateProject(updatedProject) {
+  await db("projects")
+    .update({
+      name: updatedProject.name,
+      image: updatedProject.image,
+      url: updatedProject.url,
+    })
+    .where("id", updatedProject.id);
+  return getProjectById(updatedProject.id);
 }

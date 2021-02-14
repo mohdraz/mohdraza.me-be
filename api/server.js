@@ -7,14 +7,20 @@ const configMiddleware = require("./configMiddleware.js");
 // router variables
 const authRouter = require("./auth/authRouter.js");
 const publicProjectRouters = require("./publicRouters/projectRoutes.js");
+const publicLogoRouters = require("./publicRouters/logoRoutes.js");
 const pr_ProjectRouters = require("./privateRouters/pr_projectRoutes");
+const pr_LogoRouters = require("./privateRouters/pr_logoRoute");
+const pr_GraphicRouters = require("./privateRouters/pr_graphicRoute.js");
 
 configMiddleware(server);
 
 server.get("/", (req, res) => res.send("Server is up and running"));
 server.use("/api/users", authRouter);
 server.use("/api/projects", publicProjectRouters);
+server.use("/api/logos", publicLogoRouters);
 server.use("/api/auth/projects", pr_ProjectRouters);
+server.use("/api/auth/logos", pr_LogoRouters);
+server.use("/api/auth/graphics", pr_GraphicRouters);
 
 // contact email router
 server.post("/api/email", (req, res) => {
