@@ -3,6 +3,7 @@ const nodemailer = require("nodemailer");
 
 const server = express();
 const configMiddleware = require("./configMiddleware.js");
+const authenticate = require("./middleware/auth-middleware.js");
 
 // router variables
 const authRouter = require("./auth/authRouter.js");
@@ -18,7 +19,7 @@ server.get("/", (req, res) => res.send("Server is up and running"));
 server.use("/api/users", authRouter);
 server.use("/api/projects", publicProjectRouters);
 server.use("/api/logos", publicLogoRouters);
-server.use("/api/auth/projects", pr_ProjectRouters);
+server.use("/api/auth/projects", authenticate, pr_ProjectRouters);
 server.use("/api/auth/logos", pr_LogoRouters);
 server.use("/api/auth/graphics", pr_GraphicRouters);
 
