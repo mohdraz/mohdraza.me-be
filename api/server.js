@@ -20,8 +20,8 @@ server.use("/api/users", authRouter);
 server.use("/api/projects", publicProjectRouters);
 server.use("/api/logos", publicLogoRouters);
 server.use("/api/auth/projects", authenticate, pr_ProjectRouters);
-server.use("/api/auth/logos", pr_LogoRouters);
-server.use("/api/auth/graphics", pr_GraphicRouters);
+server.use("/api/auth/logos", authenticate, pr_LogoRouters);
+server.use("/api/auth/graphics", authenticate, pr_GraphicRouters);
 
 // contact email router
 server.post("/api/email", (req, res) => {
