@@ -16,6 +16,7 @@ router.get("/", (req, res) => {
 
 router.post("/register", (req, res) => {
   const newUser = req.body;
+
   const hash = bcrypt.hashSync(newUser.password, 10);
   newUser.password = hash;
 
@@ -30,6 +31,7 @@ router.post("/register", (req, res) => {
 
 router.post("/login", (req, res) => {
   const { username, password } = req.body;
+
   UsrTbl.findBy({ username })
     .then((user) => {
       if (user && bcrypt.compareSync(password, user.password)) {

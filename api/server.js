@@ -16,6 +16,7 @@ const pr_GraphicRouters = require("./privateRouters/pr_graphicRoute.js");
 configMiddleware(server);
 
 server.get("/", (req, res) => res.send("Server is up and running"));
+
 server.use("/api/users", authRouter);
 server.use("/api/projects", publicProjectRouters);
 server.use("/api/logos", publicLogoRouters);
