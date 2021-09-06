@@ -6,12 +6,22 @@ fetch("https://mohdraza-me.herokuapp.com/api/projects")
   .then((data) => {
     console.log("data: ", data);
     const projects = JSON.stringify(data, null, 2);
+    fs.writeFileSync("./database/jsonData/websiteList.json", projects, (err) =>
+      console.log(err)
+    );
+  });
+
+fetch("https://mohdraza-me.herokuapp.com/api/projects")
+  .then((res) => res.json())
+  .then((data) => {
+    console.log("data: ", data);
+    const projects = JSON.stringify(data, null, 2);
     fs.writeFileSync("./database/jsonData/projectList.json", projects, (err) =>
       console.log(err)
     );
   });
 
-  fetch("https://mohdraza-me.herokuapp.com/api/logos")
+fetch("https://mohdraza-me.herokuapp.com/api/logos")
   .then((res) => res.json())
   .then((data) => {
     console.log("data: ", data);
