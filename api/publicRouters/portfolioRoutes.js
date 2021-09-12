@@ -1,6 +1,7 @@
 const router = require("express").Router();
 
 const WebsiteTbl = require("../../database/models/websiteModel.js");
+const LogoTbl = require("../../database/models/logoModel.js");
 
 /*================================================= Website Portfolio Route============================ */
 router.get("/websites", (req, res) => {
