@@ -9,7 +9,7 @@ const authenticate = require("./middleware/auth-middleware.js");
 const authRouter = require("./auth/authRouter.js");
 const publicProjectRouters = require("./publicRouters/projectRoutes.js");
 const publicLogoRouters = require("./publicRouters/logoRoutes.js");
-const pr_ProjectRouters = require("./privateRouters/pr_projectRoutes");
+const Apps = require("./privateRouters/apps");
 const LogoRoutes = require("./privateRouters/logoRoute");
 const pr_GraphicRouters = require("./privateRouters/pr_graphicRoute.js");
 const portfolioRoutes = require("./publicRouters/portfolioRoutes.js");
@@ -24,7 +24,7 @@ server.use("/api", portfolioRoutes);
 server.use("/api/auth/website", authenticate, websiteRoutes);
 server.use("/api/projects", publicProjectRouters);
 server.use("/api/logos", publicLogoRouters);
-server.use("/api/auth/projects", authenticate, pr_ProjectRouters);
+server.use("/api/auth/projects", authenticate, Apps);
 server.use("/api/auth/logos", authenticate, LogoRoutes);
 server.use("/api/auth/graphics", authenticate, pr_GraphicRouters);
 
