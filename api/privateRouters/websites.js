@@ -4,7 +4,22 @@ const WebsiteTbl = require("../../database/models/websiteModel.js");
 const { cloudinary } = require("../../utils/cloudinary.js");
 
 router.get("/", (req, res) => {
-  res.send("Website Auth Routers working");
+  WebsiteTbl.getAllWebsites()
+    .then((websiteList) => {
+      res.json(websiteList);
+    })
+    .catch((err) => {
+      res.status(500).json({ message: "error getting websites", err });
+    });
+});
+
+router.get("/:id", (req, res) => {
+  const { id } = req.params;
+  WebsiteTbl.getWebsiteById(id)
+    .then((website) => {
+      res.send(website);
+    })
+    .catch((err) => res.status(500).json(err));
 });
 
 router.post("/", async (req, res) => {
@@ -46,7 +61,6 @@ router.post("/", async (req, res) => {
 
     WebsiteTbl.updateWebsite(newWebsite)
       .then((updatedWebsite) => {
-        console.log("updatedWebsite", updatedWebsite);
         res.status(200).json(updatedWebsite);
       })
       .catch((err) => {
