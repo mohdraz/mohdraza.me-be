@@ -13,6 +13,15 @@ router.get("/", (req, res) => {
     });
 });
 
+router.get("/:id", (req, res) => {
+  const { id } = req.params;
+  ProjectTbl.getProjectById(id)
+    .then((app) => {
+      res.send(app);
+    })
+    .catch((err) => res.status(500).json(err));
+});
+
 router.post("/", async (req, res) => {
   const newProject = req.body;
 
@@ -32,7 +41,6 @@ router.post("/", async (req, res) => {
         newProject.oldImage
       );
     } catch (error) {
-      console.log("err", error);
       res.status(500).json({ message: "error deleting image", error: error });
     }
     // end of deleting image
@@ -52,14 +60,12 @@ router.post("/", async (req, res) => {
 
     ProjectTbl.updateProject(newProject)
       .then((updatedProject) => {
-        console.log("updatedProject", updatedProject);
         res.status(200).json(updatedProject);
       })
       .catch((err) => {
         res.status(500).json(err);
       });
   } else {
-    console.log("new project");
     try {
       const fileStr = newProject.image;
       const uploadedResponse = await cloudinary.uploader.upload(fileStr, {
