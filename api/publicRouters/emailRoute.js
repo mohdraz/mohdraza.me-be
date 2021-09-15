@@ -15,33 +15,33 @@ oauth2Client.setCredentials({
 
 const accessToken = oauth2Client.getAccessToken();
 
-const smtpTransport = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    type: "OAUTH2",
-    user: process.env.EMAIL,
-    clientId: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
-    refreshToken: process.env.REFRESH_TOKEN,
-    accessToken: accessToken,
-  },
-  tls: {
-    rejectUnauthorized: false,
-  },
-});
+// const smtpTransport = nodemailer.createTransport({
+//   service: "gmail",
+//   auth: {
+//     type: "OAUTH2",
+//     user: process.env.EMAIL,
+//     clientId: process.env.CLIENT_ID,
+//     clientSecret: process.env.CLIENT_SECRET,
+//     refreshToken: process.env.REFRESH_TOKEN,
+//     accessToken: accessToken,
+//   },
+//   tls: {
+//     rejectUnauthorized: false,
+//   },
+// });
 
-const mailOptions = {
-  from: process.env.EMAIL,
-  to: process.env.EMAIL_TO,
-  subject: "mohdraza.me email contact",
-  generateTextFromHTML: true,
-  html: "<b>test</b>",
-};
+// const mailOptions = {
+//   from: process.env.EMAIL,
+//   to: process.env.EMAIL_TO,
+//   subject: "mohdraza.me email contact",
+//   generateTextFromHTML: true,
+//   html: "<b>test</b>",
+// };
 
-smtpTransport.sendMail(mailOptions, (error, response) => {
-  error ? console.log(error) : console.log(response);
-  smtpTransport.close();
-});
+// smtpTransport.sendMail(mailOptions, (error, response) => {
+//   error ? console.log(error) : console.log(response);
+//   smtpTransport.close();
+// });
 
 // contact email router
 
