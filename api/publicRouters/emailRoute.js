@@ -4,14 +4,13 @@ const { google } = require("googleapis");
 const OAuth2 = google.auth.OAuth2;
 
 const oauth2Client = new OAuth2(
-  "664772241547-5c3a1j9ngu02ooqbv2mn9se3l1fjhfh3.apps.googleusercontent.com", // client ID
-  "-Jz2lmyNxl2fMbt9ySjrzMZc", // client secret
-  "https://developers.google.com/oauthplayground" // Redirect URL
+  process.env.CLIENT_ID, // client ID
+  process.env.CLIENT_SECRET, // client secret
+  process.env.REDIRECT_URL // Redirect URL
 );
 
 oauth2Client.setCredentials({
-  refresh_token:
-    "1//04w2Yjdg4bRC2CgYIARAAGAQSNwF-L9IrsuN9NPRo7Sc_qq7VFH2ANVn_CacKzhlm6KVhaWGBQHMU6ahdL-kRcXESv6prKJHdYuc",
+  refresh_token: process.env.REFRESH_TOKEN,
 });
 
 const accessToken = oauth2Client.getAccessToken();
